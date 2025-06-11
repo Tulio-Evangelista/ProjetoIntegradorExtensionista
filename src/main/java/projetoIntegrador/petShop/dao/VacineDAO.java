@@ -50,10 +50,7 @@ public class VacineDAO {
 
     }
 
-    /**
-     * This method is used to edit a vaccine in the database.
-     * @param obj The vaccine with the updated details.
-     */
+
     public void editVaccine(Vacine obj) {
 
         try {
@@ -81,10 +78,7 @@ public class VacineDAO {
 
     }
 
-    /**
-     * This method is used to delete a vaccine from the database.
-     * @param obj The vaccine to be deleted.
-     */
+
     public void deleteVaccine(Vacine obj) {
 
         try {
@@ -106,10 +100,7 @@ public class VacineDAO {
 
     }
 
-    /**
-     * This method is used to retrieve a list of all vaccines from the database.
-     * @return A list of all vaccines.
-     */
+
     public List<Vacine> listVaccines() {
         try {
             List<Vacine> listVaccines = new ArrayList<>();
@@ -151,11 +142,7 @@ public class VacineDAO {
         }
     }
 
-    /**
-     * This method is used to search for vaccines by name.
-     * @param name The name of the vaccine to search for.
-     * @return A list of vaccines that match the provided name.
-     */
+
     public List<Vacine> searchVaccines(String name) {
         try {
             List<Vacine> listVaccines = new ArrayList<>();
@@ -199,10 +186,7 @@ public class VacineDAO {
         }
     }
 
-    /**
-     * This method is used to delete all vaccines associated with a specific customer id.
-     * @param customerId The id of the customer.
-     */
+
     public void deleteVaccinesByCustomerId(int customerId) {
         try {
             String sql = "delete from tb_vaccines where for_id = ?";
@@ -217,10 +201,7 @@ public class VacineDAO {
         }
     }
 
-    /**
-     * This method is used to delete all vaccines associated with a specific pet id.
-     * @param petId The id of the pet.
-     */
+
     public void deleteVaccinesByPetId(int petId) {
         try {
             String sqlVaccines = "DELETE FROM tb_vaccines WHERE for_pet = ?";
