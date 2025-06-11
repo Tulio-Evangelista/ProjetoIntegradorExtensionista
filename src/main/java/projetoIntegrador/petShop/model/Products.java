@@ -12,5 +12,5 @@ public class Products {
     private double price;
     private int stock_qty;
 
-    //private Suppliers suppliers;
+    private Providers suppliers;
 }

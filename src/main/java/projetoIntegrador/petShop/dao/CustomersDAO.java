@@ -69,10 +69,7 @@ public class CustomersDAO {
 
     }
 
-    /**
-     * This method edits a customer in the database.
-     * @param obj The customer object to be edited.
-     */
+
     public void editCustomer(Customers obj) {
 
         try {
