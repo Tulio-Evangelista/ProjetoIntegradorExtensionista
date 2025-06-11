@@ -115,7 +115,7 @@ public class CustomersDAO {
         PetsDAO petsDAO = new PetsDAO();
         petsDAO.deletePetsByCustomerId(obj.getId());
 
-        VaccineDAO vaccineDAO = new VaccineDAO();
+        VacineDAO vaccineDAO = new VacineDAO();
         vaccineDAO.deleteVaccinesByCustomerId(obj.getId());
 
         ItemSaleDAO itemSaleDAO = new ItemSaleDAO();

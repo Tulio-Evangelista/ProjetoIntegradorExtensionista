@@ -98,11 +98,11 @@ public class PetsDAO {
 
         try {
 
-            VaccineDAO vaccineDAO = new VaccineDAO();
+            VacineDAO vaccineDAO = new VacineDAO();
             vaccineDAO.deleteVaccinesByPetId(obj.getId());
 
             ServicesDAO servicesDAO = new ServicesDAO();
-            servicesDAO.deleteScheduleByPetId(obj.getId());
+            servicesDAO.deleteToDoByPetId(obj.getId());
 
             String sql = "delete from tb_pets where id = ?";
 
@@ -270,7 +270,7 @@ public class PetsDAO {
 
     public void deletePetsByCustomerId(int customerId) {
         try {
-            VaccineDAO vaccineDAO = new VaccineDAO();
+            VacineDAO vaccineDAO = new VacineDAO();
             vaccineDAO.deleteVaccinesByCustomerId(customerId);
 
             String sql = "delete from tb_pets where for_id = ?";
