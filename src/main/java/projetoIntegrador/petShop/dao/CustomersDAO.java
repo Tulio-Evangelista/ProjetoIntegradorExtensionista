@@ -109,7 +109,7 @@ public class CustomersDAO {
 
 
     public void deleteCustomer(Customers obj) {
-        SalesDAO salesDAO = new SalesDAO();
+        SaleDAO salesDAO = new SaleDAO();
         salesDAO.deleteSalesByCustomerId(obj.getId());
 
         PetsDAO petsDAO = new PetsDAO();
