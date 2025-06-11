@@ -1,4 +1,4 @@
-package com.br.projetoIntegrador;
+package projetoIntegrador;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
